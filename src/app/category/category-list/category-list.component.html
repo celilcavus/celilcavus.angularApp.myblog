@@ -1,0 +1,14 @@
+<table class="table table-hovered">
+    <header>
+        <tr>
+            <td>ID</td>
+            <td>Name</td>
+        </tr>
+    </header>
+    <body *ngFor="let item of this.categories">
+        <tr>
+            <td>{{item.id}}</td>
+            <td>{{item.Name}}</td>
+        </tr>
+    </body>
+</table>

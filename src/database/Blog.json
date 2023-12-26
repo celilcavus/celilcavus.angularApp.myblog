@@ -1,0 +1,26 @@
+{
+  "Category": [
+    {
+      "id": "1",
+      "Name": "test"
+    },
+    {
+      "id": 2,
+      "Name": "celil cavus"
+    },
+    {
+      "id": 3,
+      "Name": "asdas"
+    },
+    {
+      "id": {
+        "value": "b78b8dec-f1a0-5a52-ee0c-eb0edec2f78e"
+      },
+      "Name": "celil cavus"
+    },
+    {
+      "id": "c741082e-6a7d-8bb2-32db-7e941f23c482",
+      "Name": "celil cavus"
+    }
+  ]
+}
