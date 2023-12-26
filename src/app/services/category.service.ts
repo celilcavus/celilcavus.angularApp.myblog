@@ -9,13 +9,15 @@ import { Observable } from 'rxjs';
 })
 export class CategoryService implements BaseRepository<Category> {
 
-  categorys: Category[] = [];
- 
-  GetAll(): Observable<Category[]> {
-    return axios.get<Category[]>("http://localhost:3000/category").then(x => this.categorys = x.data).catch(x => {console.log(x);});
+
+  category: Category[] = []
+  GetAll(): Promise<any> {
+    const promise = axios.get<Category[]>("http://localhost:3000/category");
+    const valuePromise = promise.then(x => this.category = x.data).catch(x => console.log(x));
+    return valuePromise;
   }
   Post(item: Category): void {
-   
+
   }
   GetById(id: number): Category {
     throw new Error('Method not implemented.');

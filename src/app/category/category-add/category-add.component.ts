@@ -3,6 +3,7 @@ import { Category } from '../../model/Category';
 import { NgForm } from '@angular/forms';
 import axios from 'axios';
 import { Guid } from "guid-typescript";
+import { CategoryListComponent } from '../category-list/category-list.component';
 
 
 
@@ -11,11 +12,16 @@ import { Guid } from "guid-typescript";
   templateUrl: './category-add.component.html',
   styleUrl: './category-add.component.css',
 })
-export class CategoryAddComponent {
-
+export class CategoryAddComponent implements OnInit {
+   
   model: Category = new Category();
+  categorylist : CategoryListComponent = new CategoryListComponent();
   constructor() {
 
+  }
+  ngOnInit(): void {
+
+    
   }
 
   add(category: NgForm) {
@@ -39,7 +45,6 @@ export class CategoryAddComponent {
       
      });
     }
-
-
   }
+  
 }

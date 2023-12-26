@@ -1,0 +1,10 @@
+<h3>New Category</h3>
+<form #AddForm="ngForm" (submit)="Update(AddForm)" *ngIf="categories">
+    <label>Name</label>
+    <h3>{{categories.id}}</h3>
+    <h2>{{categories.Name}}</h2>
+    <input type="text" class="form-control" #name="ngModel" id="Name" name="Name" required [(ngModel)]="categories.Name"/>
+    <div *ngIf="name.invalid && name.dirty" class="alert alert-danger">Name is required</div>
+    <br>
+    <button class="btn btn-primary" [disabled]="AddForm.invalid">Update</button>
+</form>

@@ -3,12 +3,17 @@
         <tr>
             <td>ID</td>
             <td>Name</td>
+            <td>Update</td>
+            <td>Delete</td>
         </tr>
     </header>
-    <body *ngFor="let item of this.categories">
+    <body *ngFor="let item of this.category">
         <tr>
             <td>{{item.id}}</td>
             <td>{{item.Name}}</td>
+            <td><a routerLink="/category-update/{{item.id}}" class="btn btn-warning">Update</a></td>
+            <td><a routerLink="/category-delete/{{item.id}}" class="btn btn-danger">Delete</a></td>
+           
         </tr>
     </body>
 </table>

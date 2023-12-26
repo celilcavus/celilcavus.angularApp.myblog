@@ -8,6 +8,7 @@ import { CategoryComponent } from './category/category.component';
 import { CategoryAddComponent } from './category/category-add/category-add.component';
 import { FormsModule } from '@angular/forms';
 import { CategoryListComponent } from './category/category-list/category-list.component';
+import { CategoryUpdateComponent } from './category/category-update/category-update.component';
 
 @NgModule({
   declarations: [
@@ -15,7 +16,8 @@ import { CategoryListComponent } from './category/category-list/category-list.co
     AdminComponent,
     CategoryComponent,
     CategoryAddComponent,
-    CategoryListComponent
+    CategoryListComponent,
+    CategoryUpdateComponent
   ],
   imports: [
     BrowserModule,
