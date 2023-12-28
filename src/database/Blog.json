@@ -1,58 +1,8 @@
 {
   "Category": [
     {
-      "id": "1",
-      "Name": "test"
-    },
-    {
-      "id": 2,
-      "Name": "celil cavus"
-    },
-    {
-      "id": 3,
-      "Name": "asdas"
-    },
-    {
-      "id": {
-        "value": "b78b8dec-f1a0-5a52-ee0c-eb0edec2f78e"
-      },
-      "Name": "celil cavus"
-    },
-    {
-      "id": "c741082e-6a7d-8bb2-32db-7e941f23c482",
-      "Name": "celil cavus"
-    },
-    {
-      "id": "36950fb4-306e-d61d-ab51-8a08222e429e",
-      "Name": "celil cavus"
-    },
-    {
-      "id": "75cef3e9-c8e2-6a71-3eb3-9ca882147562",
-      "Name": "hatice"
-    },
-    {
-      "id": "eee5467d-03cd-3d6e-1b9b-1585ca68d739",
-      "Name": "celil cavus"
-    },
-    {
-      "id": "9224d58f-7060-ae00-ff33-62d2e013ca5c",
-      "Name": "celil cavus"
-    },
-    {
-      "id": "669507b5-de88-e70c-06c8-3ae24a615726",
-      "Name": "das"
-    },
-    {
-      "id": "286da18f-a042-df36-7c7d-d899c87f32d4",
-      "Name": "dd"
-    },
-    {
-      "id": "3635accf-86dc-7121-577e-668fc31e176a",
-      "Name": "dd"
-    },
-    {
-      "id": "7de42144-9d9c-7889-f87e-f2e5943d3ff2",
-      "Name": "dasd"
+      "id": 1,
+      "Name": "sdsff"
     }
   ]
 }

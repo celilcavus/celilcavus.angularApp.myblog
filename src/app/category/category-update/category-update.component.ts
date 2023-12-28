@@ -3,6 +3,8 @@ import { ActivatedRoute } from '@angular/router';
 import axios from 'axios';
 import { Category } from '../../model/Category';
 import { NgForm } from '@angular/forms';
+import { HttpClient } from '@angular/common/http';
+import { CategoryService } from '../../services/category.service';
 
 @Component({
   selector: 'app-category-update',
@@ -11,25 +13,18 @@ import { NgForm } from '@angular/forms';
 })
 export class CategoryUpdateComponent implements OnInit {
 
-  categories : Category = new Category()
-  constructor(private _route : ActivatedRoute){
+  categories: Category = new Category()
+  constructor(private _route: ActivatedRoute, private _category: CategoryService) {
 
   }
   ngOnInit(): void {
-    axios.get<Category>(`http://localhost:3000/category?id=${this._route.snapshot.params['id']}`).then(x=> this.categories = x.data)
-
+    var value = this._category.GetById(this._route.snapshot.params['id']);
+    value.forEach(x => {
+      this.categories.id = x.id,
+        this.categories.Name = x.Name
+    });
   }
-Update(category:NgForm){
-  axios({
-    url:`http://localhost:3000/category?id=${this._route.snapshot.params['id']}`,
-    method:'put',
-    data:{
-      id:this._route.snapshot.params['id'],
-      Name:category.value.Name
-    },
-      headers:{
-        "Content-Type":'application/json'
-      }
-  }).then(x=>console.log(x.data)).catch(x=>console.log(x));
-}
+  Update(category: NgForm) {
+    this._category.Put({id:this._route.snapshot.params['id'],Name:category.value.Name});
+  }
 }

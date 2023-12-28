@@ -12,17 +12,19 @@ import { BaseRepository } from '../../interfaces/BaseRepository';
 })
 export class CategoryListComponent implements OnInit {
   category: Category[] = []
-  GetAll(): Promise<any> {
-    const promise = axios.get<Category[]>("http://localhost:3000/category");
-    const valuePromise = promise.then(x => this.category = x.data).catch(x => console.log(x));
-    return valuePromise;
+
+  constructor(private _category: CategoryService) {
+
   }
- 
   ngOnInit(): void {
-    this.GetAll()
+    this._category.GetAll().subscribe({ next: (value) => { this.category = value } });
+  }
+
+
+  delete(item:Category)
+  {
+    this._category.Delete(item)
   }
  
-
-
 
 }
