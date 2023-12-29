@@ -1,0 +1,23 @@
+<form #AddForm="ngForm" (submit)="AddPost(AddForm)">
+    <label for="Title">Title</label>
+    <input type="text" name="Title" id="Title" class="form-control" required [(ngModel)]="model.Title">
+    <!-- <div *ngIf="name.invalid && name.dirty" class="alert alert-danger">Title is required</div> -->
+    <br>
+    <label for="CategoryId">Category</label>
+    <select class="form-control" [(ngModel)]="model.CategoryId" id="CategoryId" name="CategoryId" >
+        <option value="{{item.id}}"  *ngFor="let item of this.category">{{item.Name}}</option>
+    </select>
+    <br>
+    <label for="Image">Image</label>
+    <input type="text" name="Image" id="Image" class="form-control" required [(ngModel)]="model.Image">
+    <!-- <div *ngIf="name.invalid && name.dirty" class="alert alert-danger">Title is required</div> -->
+    <br>
+    <label for="Description">Description</label>
+    <textarea type="text" name="Description" id="Description" class="form-control" required
+        [(ngModel)]="model.Description" style="height: 200px;"></textarea>
+    <!-- <div *ngIf="name.invalid && name.dirty" class="alert alert-danger">Description is required</div> -->
+    <br>
+    <button class="btn btn-primary" [disabled]="AddForm.invalid">Saved</button>
+</form>
+<br>
+<app-blog-post-list></app-blog-post-list>

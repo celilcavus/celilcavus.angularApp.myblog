@@ -11,6 +11,10 @@ import { CategoryListComponent } from './category/category-list/category-list.co
 import { CategoryUpdateComponent } from './category/category-update/category-update.component';
 import { AppComponent } from './app.component';
 import {HttpClientModule } from '@angular/common/http';
+import { BlogPostComponent } from './blog-post/blog-post.component';
+import { BlogPostAddComponent } from './blog-post/blog-post-add/blog-post-add.component';
+import { BlogPostListComponent } from './blog-post/blog-post-list/blog-post-list.component';
+import { BlogPostUpdateComponent } from './blog-post/blog-post-update/blog-post-update.component';
 
 
 @NgModule({
@@ -20,7 +24,11 @@ import {HttpClientModule } from '@angular/common/http';
     CategoryComponent,
     CategoryAddComponent,
     CategoryListComponent,
-    CategoryUpdateComponent
+    CategoryUpdateComponent,
+    BlogPostComponent,
+    BlogPostAddComponent,
+    BlogPostListComponent,
+    BlogPostUpdateComponent
   ],
   imports: [
     BrowserModule,

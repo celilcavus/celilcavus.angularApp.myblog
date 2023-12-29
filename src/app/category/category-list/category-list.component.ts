@@ -21,9 +21,9 @@ export class CategoryListComponent implements OnInit {
   }
 
 
-  delete(item:Category)
+  delete(id?:number)
   {
-    this._category.Delete(item)
+    this._category.Delete(id)
   }
  
 

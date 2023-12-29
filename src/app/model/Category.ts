@@ -1,5 +1,5 @@
 
 export class Category{
-    id?:Number
+    id?:number
     Name?:String
 }

@@ -1,9 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { Category } from '../../model/Category';
 import { NgForm } from '@angular/forms';
-import axios from 'axios';
-import { Guid } from "guid-typescript";
-import { CategoryListComponent } from '../category-list/category-list.component';
 import { HttpClient } from '@angular/common/http';
 import { CategoryService } from '../../services/category.service';
 

@@ -31,8 +31,8 @@ export class CategoryService implements BaseRepository<Category> {
       }
     });
   }
-  Delete(item: Category): void {
-    this._http.delete("http://localhost:3000/Category/" + item.id).subscribe({
+  Delete(id?:number): void {
+    this._http.delete("http://localhost:3000/Category/" + id).subscribe({
       next: (value) => {
         console.log(value);
         this.GetAll()
