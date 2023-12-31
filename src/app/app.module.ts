@@ -15,6 +15,8 @@ import { BlogPostComponent } from './blog-post/blog-post.component';
 import { BlogPostAddComponent } from './blog-post/blog-post-add/blog-post-add.component';
 import { BlogPostListComponent } from './blog-post/blog-post-list/blog-post-list.component';
 import { BlogPostUpdateComponent } from './blog-post/blog-post-update/blog-post-update.component';
+import { HomeComponent } from './home/home.component';
+import { LayoutComponent } from './layout/layout.component';
 
 
 @NgModule({
@@ -28,7 +30,9 @@ import { BlogPostUpdateComponent } from './blog-post/blog-post-update/blog-post-
     BlogPostComponent,
     BlogPostAddComponent,
     BlogPostListComponent,
-    BlogPostUpdateComponent
+    BlogPostUpdateComponent,
+    HomeComponent,
+    LayoutComponent
   ],
   imports: [
     BrowserModule,

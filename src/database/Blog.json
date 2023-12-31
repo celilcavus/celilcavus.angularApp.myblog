@@ -3,6 +3,19 @@
     {
       "id": 1,
       "Name": "sdsff"
+    },
+    {
+      "Name": "test",
+      "id": 2
+    }
+  ],
+  "Blog": [
+    {
+      "CategoryId": "1",
+      "Title": "test",
+      "Image": "https://dummyimage.com/300x300.png/cc0000/ffffff",
+      "Description": "rtret",
+      "id": 1
     }
   ]
 }

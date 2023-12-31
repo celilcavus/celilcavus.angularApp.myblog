@@ -4,7 +4,7 @@
     <!-- <div *ngIf="name.invalid && name.dirty" class="alert alert-danger">Title is required</div> -->
     <br>
     <label for="CategoryId">Category</label>
-    <select class="form-control" [(ngModel)]="model.CategoryId" id="CategoryId" name="CategoryId" >
+    <select class="form-control" [(ngModel)]="model.CategoryId" id="CategoryId" name="CategoryId">
         <option value="{{item.id}}"  *ngFor="let item of this.category">{{item.Name}}</option>
     </select>
     <br>
